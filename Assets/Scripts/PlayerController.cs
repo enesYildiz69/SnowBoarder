@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.LeftArrow))
-            rb.AddTorque(rotation);
+            rb.AddTorque(rotation * Time.deltaTime);
         else if (Input.GetKey(KeyCode.RightArrow))
-            rb.AddTorque(-rotation);
+            rb.AddTorque(-rotation * Time.deltaTime);
     }
 }
