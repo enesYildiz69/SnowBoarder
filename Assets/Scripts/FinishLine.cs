@@ -8,12 +8,13 @@ public class FinishLine : MonoBehaviour
     [SerializeField] float delay;
     [SerializeField] ParticleSystem finishEffect;
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Player")
-        finishEffect.Play();
-            Invoke("reloadScene",delay);
+        if (other.tag == "Player") {
+            finishEffect.Play();
+            Invoke("reloadSceneFinish",delay);
+        }
     }
 
-    void reloadScene () {
+    void reloadSceneFinish () {
         SceneManager.LoadScene(0);
     }
 }
