@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -31,9 +32,12 @@ public class PlayerController : MonoBehaviour
     }
 
     void speedUp () {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space)) {
             se2d.speed = boostSpeed;
-        else
+        }
+        else {
             se2d.speed = baseSpeed;
+        }
+
     }
 }
