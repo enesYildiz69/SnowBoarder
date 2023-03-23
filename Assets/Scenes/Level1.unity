@@ -2019,8 +2019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 2009027516}
-  zoomOutSpeed: 18
-  zoomInSpeed: 12
+  zoomOutSpeed: 20
+  zoomInSpeed: 10
   maxZoomOutSize: 15
   minZoomInSize: 10
   defaultZoom: 12.5

@@ -43,13 +43,14 @@ public class CameraZoom : MonoBehaviour
                 Invoke("DecreaseZoom", 0.01f);
             virtualCamera.m_Lens.OrthographicSize = zoomSet;
         }
+        Debug.Log(zoomSet);
     }
 
     void IncreaseZoom () {
-        zoomSet += 0.01f;
+        zoomSet += 0.005f;
     }
 
     void DecreaseZoom () {
-        zoomSet -= 0.01f;
+        zoomSet -= 0.005f;
     }
 }
